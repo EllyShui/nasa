@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/imgday.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/common.css" type="text/css"> 
+    <link rel="stylesheet" href="css/imgday.css" type="text/css"> 
+    <title>Image of the Day</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="img/header/logo_worm.png" alt="logo"></a></div>
+        <nav>
+            <ul class="main_menu">
+                <li>Explore <span class="sub_down"></span></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">Nasa+<span>LIVE</span></a></li>
+            </ul>
+            <ul class="sub_menu">
+                <li class="sub_on"><a href="#">Missions</a>
+                    <ul>
+                        <li><a href="missions.html">Missions <span>&#10140;</span></a></li>
+                        <li><a href="#">All Missions</a></li>
+                        <li><a href="#">launches and landings</a></li>
+                        <li><a href="#">Spaceships and Rockets</a></li>
+                        <li><a href="#">Communicating with Missions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Humans in Space</a>
+                    <ul>
+                        <li><a href="missions.html">Humans in Space <span>&#10140;</span></a></li>
+                        <li><a href="#">Why Go to Space</a></li>
+                        <li><a href="#">Astronauts</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Spaceships and Rockets</a></li>
+                        <li><a href="#">Living in Space</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Earth & Climate</a>
+                    <ul>
+                        <li><a href="missions.html">Earth & Climate <span>&#10140;</span></a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Climate Change</a></li>
+                        <li><a href="#">Data</a></li>
+                        <li><a href="#">Multimedia</a></li>
+                        <li><a href="#">For Researchers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">The Solar System</a>
+                    <ul>
+                        <li><a href="missions.html">The Solar System <span>&#10140;</span></a></li>
+                        <li><a href="#">Our Solar System</a></li>
+                        <li><a href="#">Planets</a></li>
+                        <li><a href="#">Moons</a></li>
+                        <li><a href="#">Asteroids & Comets</a></li>
+                        <li><a href="#">Live: Clipper Cam</a></li>
+                        <li><a href="#">Skywatching</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">The Universe</a>
+                    <ul>
+                        <li><a href="missions.html">The Universe <span>&#10140;</span></a></li>
+                        <li><a href="#">Exoplanets</a></li>
+                        <li><a href="#">The Search for Life</a></li>
+                        <li><a href="#">Stars</a></li>
+                        <li><a href="#">Galaxies</a></li>
+                        <li><a href="#">Black Holes</a></li>
+                        <li><a href="#">The Big Bang</a></li>
+                        <li><a href="#">Dark Matter & Dark Energy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Science</a>
+                    <ul>
+                        <li><a href="missions.html">Science <span>&#10140;</span></a></li>
+                        <li><a href="#">All NASA Science</a></li>
+                        <li><a href="#">Earth Science</a></li>
+                        <li><a href="#">Planetary Science</a></li>
+                        <li><a href="#">Astrophysics & Space Science</a></li>
+                        <li><a href="#">The Sun & Heliophysics</a></li>
+                        <li><a href="#">Biological & Physical Sciences</a></li>
+                        <li><a href="#">Lunar Science</a></li>
+                        <li><a href="#">Citizen Science</a></li>
+                        <li><a href="#">Astromaterials</a></li>
+                        <li><a href="#">Aeronautics Research</a></li>
+                        <li><a href="#">Human Space Travel Research</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aeronautics</a>
+                    <ul>
+                        <li><a href="missions.html">Aeronautics <span>&#10140;</span></a></li>
+                        <li><a href="#">Science in the Air</a></li>
+                        <li><a href="#">NASA Aircraft</a></li>
+                        <li><a href="#">Flight Innovation</a></li>
+                        <li><a href="#">Supersonic Flight</a></li>
+                        <li><a href="#">Air Traffic Solutions</a></li>
+                        <li><a href="#">Green Aviation Tech</a></li>
+                        <li><a href="#">Drones & You</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Technology</a>
+                    <ul>
+                        <li><a href="missions.html">Technology <span>&#10140;</span></a></li>
+                        <li><a href="#">Technology Transfer & Spinoffs</a></li>
+                        <li><a href="#">Space Travel Technology</a></li>
+                        <li><a href="#">Technology Living in Space</a></li>
+                        <li><a href="#">Manufacturing and Materials</a></li>
+                        <li><a href="#">Robotics</a></li>
+                        <li><a href="#">Science Instruments</a></li>
+                        <li><a href="#">Computing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Learning Resources</a>
+                    <ul>
+                        <li><a href="missions.html">Learning Resources <span>&#10140;</span></a></li>
+                        <li><a href="#">For Kids and Students</a></li>
+                        <li><a href="#">For Educators</a></li>
+                        <li><a href="#">For Colleges and Universities</a></li>
+                        <li><a href="#">For Professionals</a></li>
+                        <li><a href="#">STEM Engagement at NASA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About NASA</a>
+                    <ul>
+                        <li><a href="missions.html">About NASA <span>&#10140;</span></a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">Directorates</a></li>
+                        <li><a href="#">Centers & Facilities</a></li>
+                        <li><a href="#">Doing Business with NASA</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Humans In Space</a>
+                    <ul>
+                        <li><a href="missions.html">Humans In Space <span>&#10140;</span></a></li>
+                        <li><a href="#">Why Go to Space</a></li>
+                        <li><a href="#">Astronauts</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Spaceships and Rockets</a></li>
+                        <li><a href="#">Living in Space</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="right_menu">
+            <div class="search">
+                <input type="text" id="search_in">
+                <img src="img/header/icon_search.png" alt="search">
+            </div>
+            <div class="lang">
+                <img src="img/header/icon_lang.png" alt="language">
+                <div class="select_lang">
+                    <span>ENG</span>
+                    <span>ESP</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <section class="img_main">
+            <h3>Image of The Days</h3>
+            <div class="dp_img">
+                <div><img src="img/imgday/4.webp" alt="image4"></div>
+                <div> <!--li로 만들기-->
+                    <h3>30 Doradus B: NASA Telescopes Start the Year With a Double Bang</h3>
+                    <p>This deep dataset from Chandra of the remains of a supernova known as 30 Doradus B (30 Dor B) reveals evidence for more than one supernova explosion in the history of this remnant. Unusual structures in the Chandra data cannot be explained by a single explosion. These images of 30 Dor B also show optical data from the Blanco telescope in Chile, and infrared data from Spitzer. Additional data from Hubble highlights sharp features in the image.</p>
+                    <a class="readmore" href="article.html">Read More +</a>
+                </div>
+            </div>
+            <div class="img_info">
+                <ul>
+                    <li class="size">
+                        <h4>Size</h4>
+                        <p>6000*6000px</p><span class="download"><img src="img/icons/download_icon.png" alt="download_icon"></span>
+                    </li>
+                    <li class="credit">
+                        <h4>Image credit</h4>
+                        <p>X-ray: NASA/CXC/Penn State Univ./L. Townsley et al.; Optical: NASA/STScI/HST; Infrared: NASA/JPL/CalTech/SST; Image Processing: NASA/CXC/SAO/J. Schmidt, N. Wolk, K. Arcand</p>
+                    </li>
+                    <li class="share">
+                        <h4>Share link</h4>
+                        <ul class="share">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="img_li"> <!--하나의 ul로 만들기-->
+            <ul class="page">
+                <li><img src="img/imgday/1.webp" alt="image1"></li>
+                <li><img src="img/imgday/2.webp" alt="image2"></li>
+                <li><img src="img/imgday/3.webp" alt="image3"></li>
+                <li><img src="img/imgday/4.webp" alt="image4"></li>
+                <li><img src="img/imgday/5.webp" alt="image5"></li>
+                <li><img src="img/imgday/6.webp" alt="image6"></li>
+                <li><img src="img/imgday/7.webp" alt="image7"></li>
+                <li><img src="img/imgday/8.webp" alt="image8"></li>
+                <li><img src="img/imgday/9.webp" alt="image9"></li>
+                <li><img src="img/imgday/10.webp" alt="image10"></li>
+                <li><img src="img/imgday/11.webp" alt="image11"></li>
+                <li><img src="img/imgday/12.webp" alt="image12"></li>
+                <li><img src="img/imgday/13.webp" alt="image13"></li>
+                <li><img src="img/imgday/14.webp" alt="image14"></li>
+                <li><img src="img/imgday/15.webp" alt="image15"></li>
+                <li><img src="img/imgday/16.webp" alt="image16"></li>
+                <li><img src="img/imgday/17.webp" alt="image17"></li>
+                <li><img src="img/imgday/18.webp" alt="image18"></li>
+                <li><img src="img/imgday/19.webp" alt="image19"></li>
+                <li><img src="img/imgday/20.webp" alt="image20"></li>
+                <li><img src="img/imgday/21.webp" alt="image21"></li>
+                <li><img src="img/imgday/22.webp" alt="image22"></li>
+                <li><img src="img/imgday/23.webp" alt="image23"></li>
+                <li><img src="img/imgday/24.webp" alt="image24"></li>
+                <li><img src="img/imgday/25.webp" alt="image25"></li>
+                <li><img src="img/imgday/26.webp" alt="image26"></li>
+                <li><img src="img/imgday/27.webp" alt="image27"></li>
+                <li><img src="img/imgday/28.jpg" alt="image28"></li>
+                <li><img src="img/imgday/29.webp" alt="image29"></li>
+                <li><img src="img/imgday/30.webp" alt="image30"></li>
+                <li><img src="img/imgday/31.webp" alt="image31"></li>
+                <li><img src="img/imgday/32.webp" alt="image32"></li>
+                <li><img src="img/imgday/33.webp" alt="image33"></li>
+                <li><img src="img/imgday/34.jpg" alt="image34"></li>
+                <li><img src="img/imgday/35.webp" alt="image35"></li>
+                <li><img src="img/imgday/36.webp" alt="image36"></li>
+                <li><img src="img/imgday/37.webp" alt="image37"></li>
+                <li><img src="img/imgday/38.webp" alt="image38"></li>
+                <li><img src="img/imgday/39.webp" alt="image39"></li>
+                <li><img src="img/imgday/40.webp" alt="image40"></li>
+                <li><img src="img/imgday/1.webp" alt="image41"></li>
+                <li><img src="img/imgday/2.webp" alt="image42"></li>
+                <li><img src="img/imgday/3.webp" alt="image43"></li>
+                <li><img src="img/imgday/4.webp" alt="image44"></li>
+                <li><img src="img/imgday/5.webp" alt="image45"></li>
+                <li><img src="img/imgday/6.webp" alt="image46"></li>
+                <li><img src="img/imgday/7.webp" alt="image47"></li>
+                <li><img src="img/imgday/8.webp" alt="image48"></li>
+                <li><img src="img/imgday/9.webp" alt="image49"></li>
+                <li><img src="img/imgday/10.webp" alt="image50"></li>
+                <li><img src="img/imgday/11.webp" alt="image51"></li>
+                <li><img src="img/imgday/12.webp" alt="image52"></li>
+                <li><img src="img/imgday/13.webp" alt="image53"></li>
+                <li><img src="img/imgday/14.webp" alt="image54"></li>
+                <li><img src="img/imgday/15.webp" alt="image55"></li>
+                <li><img src="img/imgday/16.webp" alt="image56"></li>
+                <li><img src="img/imgday/17.webp" alt="image57"></li>
+                <li><img src="img/imgday/18.webp" alt="image58"></li>
+                <li><img src="img/imgday/19.webp" alt="image59"></li>
+                <li><img src="img/imgday/20.webp" alt="image60"></li>
+                <li><img src="img/imgday/21.webp" alt="image61"></li>
+                <li><img src="img/imgday/22.webp" alt="image62"></li>
+                <li><img src="img/imgday/23.webp" alt="image63"></li>
+                <li><img src="img/imgday/24.webp" alt="image64"></li>
+                <li><img src="img/imgday/25.webp" alt="image65"></li>
+                <li><img src="img/imgday/26.webp" alt="image66"></li>
+                <li><img src="img/imgday/27.webp" alt="image67"></li>
+                <li><img src="img/imgday/28.jpg" alt="image68"></li>
+                <li><img src="img/imgday/29.webp" alt="image69"></li>
+                <li><img src="img/imgday/30.webp" alt="image70"></li>
+                <li><img src="img/imgday/31.webp" alt="image71"></li>
+                <li><img src="img/imgday/32.webp" alt="image72"></li>
+                <li><img src="img/imgday/33.webp" alt="image73"></li>
+                <li><img src="img/imgday/34.jpg" alt="image74"></li>
+                <li><img src="img/imgday/35.webp" alt="image75"></li>
+                <li><img src="img/imgday/36.webp" alt="image76"></li>
+                <li><img src="img/imgday/37.webp" alt="image77"></li>
+                <li><img src="img/imgday/38.webp" alt="image78"></li>
+                <li><img src="img/imgday/39.webp" alt="image79"></li>
+                <li><img src="img/imgday/40.webp" alt="image80"></li>
+                <li><img src="img/imgday/1.webp" alt="image81"></li>
+                <li><img src="img/imgday/2.webp" alt="image82"></li>
+                <li><img src="img/imgday/3.webp" alt="image83"></li>
+                <li><img src="img/imgday/4.webp" alt="image84"></li>
+                <li><img src="img/imgday/5.webp" alt="image85"></li>
+                <li><img src="img/imgday/6.webp" alt="image86"></li>
+                <li><img src="img/imgday/7.webp" alt="image87"></li>
+                <li><img src="img/imgday/8.webp" alt="image88"></li>
+                <li><img src="img/imgday/9.webp" alt="image89"></li>
+                <li><img src="img/imgday/10.webp" alt="image90"></li>
+                <li><img src="img/imgday/11.webp" alt="image91"></li>
+                <li><img src="img/imgday/12.webp" alt="image92"></li>
+                <li><img src="img/imgday/13.webp" alt="image93"></li>
+                <li><img src="img/imgday/14.webp" alt="image94"></li>
+                <li><img src="img/imgday/15.webp" alt="image95"></li>
+                <li><img src="img/imgday/16.webp" alt="image96"></li>
+                <li><img src="img/imgday/17.webp" alt="image97"></li>
+                <li><img src="img/imgday/18.webp" alt="image98"></li>
+                <li><img src="img/imgday/19.webp" alt="image99"></li>
+                <li><img src="img/imgday/20.webp" alt="image100"></li>
+                <li><img src="img/imgday/21.webp" alt="image101"></li>
+                <li><img src="img/imgday/22.webp" alt="image102"></li>
+                <li><img src="img/imgday/23.webp" alt="image103"></li>
+                <li><img src="img/imgday/24.webp" alt="image104"></li>
+                <li><img src="img/imgday/25.webp" alt="image105"></li>
+            </ul>
+            <div class="page_btn">
+                <svg class="arrow arrow_left" xmlns="http://www.w3.org/2000/svg" width="12" height="18" fill="none">
+                    <path d="M11 1C11 1 1 3.52632 1 9C1 14.4737 11 17 11 17" stroke="#dddddd" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <ul class="num_btn">
+                    <li class="num num_on">1</li>
+                    <li class="num">2</li>
+                    <li class="num">3</li>
+                    <li class="num">4</li>
+                    <li class="num">5</li>
+                    <li class="num">6</li>
+                    <li class="num">7</li>
+                </ul>
+                <span class="dots">...</span>
+                <svg class="arrow arrow_right" xmlns="http://www.w3.org/2000/svg" width="12" height="18" fill="none">
+                    <path d="M1 1C1 1 11 3.52632 11 9C11 14.4737 1 17 1 17" stroke="#696969" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </section>
+        <a href="#" class="gotop"><div></div></a>
+        <footer>
+            <div class="footer_wrap">
+                <div class="f1">
+                    <div><a href="index.html"><img src="img/footer/logo_ball.png" alt="logo"></a></div>
+                    <div>
+                        <span>The National Aeronautics and Space Administration</span>
+                        <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+                    </div>
+                </div>
+                <div class="f2">
+                    <ul>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">For Media</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">FOIA</a></li>
+                        <li><a href="">No FEAR Act</a></li>
+                        <li><a href="">Office of The IG</a></li>
+                        <li><a href="">Budget & Annual Reports</a></li>
+                        <li><a href="">Agency Financial Reports</a></li>
+                        <li><a href="">Contact NASA</a></li>
+                        <li><a href="">Responsible NASA Official : Abigail Bowman</a></li>
+                    </ul>
+                </div>
+                <div class="f3">
+                    <ul class="sns">
+                        <li><a href="#"><img src="img/footer/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="img/footer/insta.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="img/footer/youtube.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="img/footer/twiiter.png" alt="twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div><!--wrap끝-->
+    
+</body>
+</html>
