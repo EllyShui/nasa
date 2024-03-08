@@ -198,18 +198,20 @@ position:relative;}
     h3{font-size:26px;}
 
     /*---- article1-main news ----*/
+    .slide_wrap{width:85%;}
     .slide_wrap h3{width:100%;
         max-width:640px;
         font-size:55px;
         line-height:60px;}
     .slide_wrap p{width:100%;
         max-width:640px;}
+    .slide_wrap a{background-color:#db362d;}
         /* .slide_count */
     .slide_count{left:auto;
         right:calc(2.5% + 45px);}
 
     /*---- article2-featured mission ----*/
-    .con2>div:nth-child(1){padding:6% calc(2.5% + 45px);}
+    .con2>div:nth-child(1){padding:6% 7.5%;}
     .m_article{margin-bottom:35px;}
     .m_article h3{width:100%;
         line-height:32px;}
@@ -219,7 +221,7 @@ position:relative;}
         text-overflow:ellipsis;}
         /* m_ct */
     .m_ct{height:32%;
-        padding-bottom:6%;
+        padding:0 15% 6%;
         gap:1px 1px;}
     .m_ct li{width:calc(50% - 1px); height:calc(50% - 1px);
         position:relative;}
@@ -242,6 +244,7 @@ position:relative;}
     .m_ct li:hover div:nth-child(2){background-color:rgba(0,0,0,0);}
 
     /*---- article3 - image of the day ----*/
+    .imgday_wrap{width:85%;}
     .con3{padding:6% 0;}
     .imgday_wrap p{width:100%; max-width:750px;}
 
@@ -257,7 +260,6 @@ position:relative;}
     .slide_wrap{width:90%;}
     .slide_wrap h3{font-size:30px;
         line-height:34px;}
-    .slide_wrap a{background-color:#db362d;}
         /* .slide_count */
     .slide_count{width:40px;
         right:5%; bottom:5%;}

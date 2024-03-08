@@ -125,6 +125,7 @@ section{width:calc(95% - 90px);
 /*---------- 반응형 ----------*/
 /* 태블릿 */
 @media only screen and (max-width:1440px){
+    section{width:85%;}
     /*---- sec1 - display ----*/
     .dp_img{width:100%;
         border-right:0;

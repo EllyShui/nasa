@@ -75,6 +75,7 @@ article p a{display:-webkit-box;
 @media only screen and (max-width:1440px){
     /*---- sec1 - main ----*/
     .main{height:90vh;}
+    .main_con{width:85%;}
     .mission_sub{width:100%; min-width:0;}
     /*---- sec2 - missions ----*/
     article{width:49%; min-width:0;}
@@ -84,7 +85,8 @@ article p a{display:-webkit-box;
 /* 모바일 */
 @media only screen and (max-width:768px){
     /*---- sec1 - main ----*/
-    .main_con{padding-top:120px;
+    .main_con{width:90%;
+        padding-top:120px;
         position:relative;}
     .mission_sub{display:block;
         position:absolute;
