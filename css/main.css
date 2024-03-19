@@ -7,47 +7,38 @@
 
 
 /*---------- article 공통 ----------*/
-article{width:100%;}
+article{width:100%; height:70vh; min-height:820px;
+    padding:90px calc(2.5% + 45px);}
+article>div:first-child>a:first-child{margin-bottom:35px;
+    font-size:12px; font-weight:300;}
 h3{font-family:'Times New Roman', sans-serif;
     font-size:30px;
-    font-weight:300;}
+    margin-bottom:20px;}
 p{font-family: 'Nunito', sans-serif;
-    font-size:13px;
-    font-weight:200;}
+    font-size:16px;
+    font-weight:200;
+    margin-bottom:10px;}
 .readmore{font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    font-size:14px;
     font-weight:400;}
 
-/*---------- article1 - main_slide ----------*/
-    /* slide */
-.con1{width:100%; height:70vh;
-    min-height:820px;
+
+/*---------- article1 - main news ----------*/
+/* slide */
+.con1{padding:0;
     position:relative;
-overflow:hidden;
-}
-.main_slide{width:300%; /*3개*/
-    height:100%;}
-.main_slide li{width:calc(100%/3); /*3개*/
-    height:100%;
+    overflow:hidden;}
+.main_slide{width:300%; height:100%;}
+.main_slide li{width:calc(100%/3); height:100%;
     overflow:hidden;
     float:left;
     display:flex;
-    align-items:center;}
-.slide1{
-    background:url('../img/main/sec1/slide1.webp') no-repeat;
+    align-items:center;
     background-size:cover;
-    background-position:center top;
-}
-.slide2{
-    background:url('../img/main/sec1/slide2.webp') no-repeat;
-    background-size:cover;
-    background-position:center top;
-}
-.slide3{
-    background:url('../img/main/sec1/slide3.webp') no-repeat;
-    background-size:cover;
-    background-position:center top;
-}
+    background-position:center top;}
+.slide1{background:url('../img/main/sec1/slide1.webp') no-repeat;}
+.slide2{background:url('../img/main/sec1/slide2.webp') no-repeat;}
+.slide3{background:url('../img/main/sec1/slide3.webp') no-repeat;}
 .slide_wrap{width:calc(95% - 90px);
     margin:0 auto;
     color:#ffffff;
@@ -56,88 +47,74 @@ overflow:hidden;
     margin-bottom:10px;
     font-size:66px;
     line-height:64px;}
-.slide_wrap p{width:600px;
+.slide_wrap p{width:700px;
     margin-bottom:20px;
-    font-size:14px;
     color:#dddddd;    
     line-height:22px;}
-.slide_wrap a{width:100px;
-    height:40px;
+.slide_wrap a{width:100px; height:40px;
     line-height:40px;
     border:1.4px solid #db362d;
     border-radius:10px;
-    font-family: 'Nunito', sans-serif;
+    font-family:'Nunito', sans-serif;
     font-size:14px;
     font-weight:600;
     text-align:center;}
 .slide_wrap a:hover{background-color:#db362d;}
-    /* slide_count */
+/* slide_count */
 .slide_count{width:82px;
     height:42px;
     position:absolute;
-    bottom:60px;
-    left:calc(2.5% + 45px);
+    bottom:60px; left:calc(2.5% + 45px);
     text-shadow:0 0 3px rgba(0,0,0,0.6);}
 .slide_count>svg{height:42px;
     cursor:pointer;}
 .slide_count>svg:hover path{stroke-width:2px;}
 .slide_num{display:inline-block;
-    width:42px;
-    height:42px;
+    width:42px; height:42px;
     margin:0 4px;
     line-height:42px;
     text-align:center;
     font-family:'Nunito', sans-serif;
     font-size:12px;
     color:#ffffff;
-position:relative;}
+    position:relative;}
 .slide_num svg{position:absolute;
-    top:0;
-    left:0;
+    top:0; left:0;
     transform:rotate(-90deg);}
 .slide_num svg circle{stroke-dasharray:700;
     stroke-dashoffset:0;}
 
 
-    
-
-
 /*---------- article2 - featured mission ----------*/
-    /* con2,con3 공통 */
-.con2, .con3{width:100%; height:60vh;
-    min-height:740px;}
-    /* con2 */
-.con2{display:flex;}
+/* con2 */
+.con2{display:flex;
+    padding:0;}
 .con2>div{height:100%;}
 .con2>div:nth-child(1){width:52%;
     padding:90px calc(2.5% + 45px);
     position:relative;}
-.con2>div>a{font-size:12px;
-    font-weight:300;
-    color:#999999;
-    margin-bottom:35px;}
+.con2>div>a{color:#999999;}
 .con2>div>a .more{border-color:#999999;}
 .m_article{margin-bottom:50px;}
 .m_article li{display:none;}
 .m_article .m_on{display:block;}
 .m_article h3{width:80%;
     max-width:470px;
-    margin-bottom:20px;
     line-height:38px;}
-.m_article p{margin-bottom:10px;
+.m_article p{max-height:220px;
     font-weight:300;
-    line-height:20px;
-    color:#696969;}
-.m_article .readmore{color:#696969;}
-    /* m_ct */
+    color:#696969;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:10;
+    -webkit-box-orient:vertical;}
+/* m_ct */
 .m_ct{width:100%;
-    padding:0 calc(5% + 45px) 90px;
+    padding:0 calc(5% + 45px);
     display:flex;
-    flex-wrap:wrap;
     justify-content:space-between;
     position:absolute;
-    bottom:0;
-    left:0;}
+    bottom:90px; left:0;}
 .m_ct li{width:20%;
     cursor:pointer;}
 .m_ct li div:nth-child(1){width:100%;
@@ -147,36 +124,26 @@ position:relative;}
     overflow:hidden;}
 .m_ct .m_ct_on div:first-child{border:3px solid #db362d;}
 .m_ct li div img{height:100%;}
-.m_ct li div:nth-child(2){font-size:10px;
+.m_ct li div:nth-child(2){font-size:12px;
     font-weight:400;
-    line-height:12px;
     color:#696969;
     text-align:center;}
-    /* .con2>div:nth-child(2) - m_img */
+/* .con2 .m_img */
 .m_img{width:48%; height:100%;}
 .m_img img{width:100%; height:100%;
     object-fit:cover;
-    object-position:20%;}
+    object-position: center;}
 
 
 /*---------- article3 - image of the day ----------*/
-.con3{padding:90px 0;
-    background:url('../img/main/sec3/imgday.jpg') no-repeat;
+.con3{background:url('../img/main/sec3/imgday.jpg') no-repeat;
     background-size:200%;
     background-position:0 0;
     animation:imgday_bg 170s linear infinite;}
-.imgday_wrap{width:calc(95% - 90px);
-    margin:0 auto;
-    color:#ffffff;
+.imgday_wrap{color:#ffffff;
     text-shadow:0 0 3px rgba(0,0,0,0.6);}
-.imgday_wrap a{font-size:12px;
-    font-weight:300;
-    margin-bottom:35px;}
 .imgday_wrap .more{border-color:#ffffff;}
-.imgday_wrap h3{margin-bottom:20px;}
-.imgday_wrap p{width:60%;
-    max-width:1430px;
-    margin-bottom:10px;}
+.imgday_wrap p{width:60%; max-width:1430px;}
 
 @keyframes imgday_bg{
     from{background-position:0 0;}
@@ -190,23 +157,24 @@ position:relative;}
 
 
 
+
 /*---------- 반응형 ----------*/
 /* 태블릿 */
 @media only screen and (max-width:1440px){
     /*---- article 공통 ----*/
-    .con1, .con2, .con3{max-height:740px;}
-    h3{font-size:26px;}
+    article{height:90vh; min-height:0;}
+    h3{font-size:24px;}
 
     /*---- article1-main news ----*/
     .slide_wrap{width:85%;}
     .slide_wrap h3{width:100%;
         max-width:640px;
-        font-size:55px;
-        line-height:60px;}
+        font-size:50px;
+        line-height:54px;}
     .slide_wrap p{width:100%;
         max-width:640px;}
     .slide_wrap a{background-color:#db362d;}
-        /* .slide_count */
+    /* .slide_count */
     .slide_count{left:auto;
         right:calc(2.5% + 45px);}
 
@@ -215,18 +183,16 @@ position:relative;}
     .m_article{margin-bottom:35px;}
     .m_article h3{width:100%;
         line-height:32px;}
-    .m_article p{max-height:200px;
-        line-height:18px;
-        overflow:hidden;
-        text-overflow:ellipsis;}
-        /* m_ct */
-    .m_ct{height:32%;
-        padding:0 15% 6%;
-        gap:1px 1px;}
-    .m_ct li{width:calc(50% - 1px); height:calc(50% - 1px);
+    .m_article p{max-height:200px;}
+    /* m_ct */
+    .m_ct{flex-wrap:wrap;
+        padding:0 15%;
+        gap:1px 1px;
+        bottom:6%;}
+    .m_ct li{width:calc(50% - 1px);
         position:relative;}
-    .m_ct li div:nth-child(1){width:100%; height:100%;
-        aspect-ratio:auto;
+    .m_ct li div:nth-child(1){width:100%; max-height:120px;
+        margin-bottom:0;
         border-radius:0;}
     .m_ct li div img{width:100%;
         object-fit:cover;
@@ -241,11 +207,9 @@ position:relative;}
         position:absolute;
         top:0; left:0;}
     .m_ct li .more{border-color:#ffffff;}
-    .m_ct li:hover div:nth-child(2){background-color:rgba(0,0,0,0);}
+    .m_ct .m_ct_on div:nth-child(2){background-color:rgba(0,0,0,0);}
 
     /*---- article3 - image of the day ----*/
-    .imgday_wrap{width:85%;}
-    .con3{padding:6% 0;}
     .imgday_wrap p{width:100%; max-width:750px;}
 
 }/* 태블릿 끝 */
@@ -253,40 +217,31 @@ position:relative;}
 /* 모바일 */
 @media only screen and (max-width:768px){
     /*---- article 공통 ----*/
-    .con1, .con2, .con3{min-height:auto;
-        height:90vh;}
-
+    article{padding:6% 5%;}
+    article>div:first-child>a:first-child{margin-bottom:20px;}
+    
     /*---- article1-main news ----*/
     .slide_wrap{width:90%;}
-    .slide_wrap h3{font-size:30px;
+    .slide_wrap h3{font-size:32px;
         line-height:34px;}
-        /* .slide_count */
-    .slide_count{width:40px;
-        right:5%; bottom:5%;}
-    .slide_count>svg{display:none;}
+    /* .slide_count */
+    .slide_count{right:5%; bottom:5%;}
 
     /*---- article2-featured mission ----*/
     .con2>div:nth-child(1){width:100%;
-        padding:6% 0;}
-    .con2>div>a{padding-left:5%;
-        margin-bottom:20px;}
-    .m_article{margin:0 5%;}
-    .m_article h3{width:100%;
-        max-width:100%;
-        margin-bottom:12px;
-        line-height:30px;}
-    .m_article p{max-height:180px;}
-        /* m_ct */
-    .m_ct{height:35%;
-        padding:0;
-        gap:1px 1px;}
-        /* .con2>div:nth-child(2) - m_img */
+        padding:6% 5%;}
+    .m_article h3{max-width:100%;
+        margin-bottom:12px;}
+    .m_article p{max-height:130px;
+        -webkit-line-clamp:6;}
+    /* m_ct */
+    .m_ct{padding:0 5%;
+        bottom:6%;}
+    .m_ct li div:nth-child(1){max-height:100px;}
+    /* .con2 .m_img */
     .m_img{display:none;}
 
     /*---- article3 - image of the day ----*/
-    .con3{padding:6% 5%;}
-    .imgday_wrap{width:100%;}
-    .imgday_wrap a{margin-bottom:20px;}
     .imgday_wrap h3{margin-bottom:12px;}
     .imgday_wrap p{display:none;}
 }/* 모바일 끝 */

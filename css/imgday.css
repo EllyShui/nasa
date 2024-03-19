@@ -15,7 +15,7 @@ section{width:calc(95% - 90px);
 .img_main{border-bottom:1px solid #b9b9b9;}
 .img_main>h3{margin-bottom:10px;
     font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    font-size:14px;
     font-weight:300;
     color:#393939;}
 .img_main::after{display:block;content:"";clear:both;}
@@ -36,11 +36,11 @@ section{width:calc(95% - 90px);
     line-height:38px;
     color:#000000;}
 .dp_img p{margin-bottom:10px;
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
-    line-height:20px;
+    line-height:22px;
     color:#696969;}
-.dp_img .readmore{font-size:10px;
+.dp_img .readmore{font-size:12px;
     font-weight:300;
     color:#393939;}
     /* img_info */
@@ -49,7 +49,7 @@ section{width:calc(95% - 90px);
 .img_info>ul>li{margin-bottom:40px;}
 .img_info h4{margin-bottom:10px;
     font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    font-size:14px;
     font-weight:500;
     color:#696969;}
 .img_info p{font-size:12px;
@@ -166,7 +166,7 @@ section{width:calc(95% - 90px);
 
 /* 모바일 */
 @media only screen and (max-width:768px){
-    .wrap{top:74px;}
+    .wrap{top:124px;}
     section{width:90%;}
     /*---- sec1 - display ----*/
     .img_main{border-bottom:0;}

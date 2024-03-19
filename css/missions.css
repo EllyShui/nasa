@@ -14,11 +14,11 @@
 .main_con{width:calc(95% - 90px);
     margin:0 auto;
     padding-top:144px;}
-.mission_sub{width:55%; min-width:620px;
+.mission_sub{width:60%; min-width:620px;
     display:flex;
     flex-wrap:wrap;
     font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    font-size:14px;
     font-weight:300;
     color:#b9b9b9;}
 .mission_sub li{margin-bottom:10px;
@@ -48,7 +48,7 @@ article div img{width:100%;
 article h3{margin-top:10px;
     margin-bottom:20px;
     font-family: 'Nunito', sans-serif;
-    font-size:12px;
+    font-size:13px;
     font-weight:300;
     color:#696969;}
 article .more{line-height:12px;}
@@ -61,7 +61,7 @@ article p a{display:-webkit-box;
     -webkit-line-clamp:4;
     -webkit-box-orient:vertical;
     overflow:hidden;
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
     line-height:19px;
     color:#999999;}
@@ -89,13 +89,16 @@ article p a{display:-webkit-box;
         padding-top:120px;
         position:relative;}
     .mission_sub{display:block;
+        font-size:16px;
         position:absolute;
-        top:210px; left:0;}
+        top:200px; left:0;}
     .mission_sub li{margin-bottom:16px;
         border-left:0;
         padding:0;}
+    .main h3{font-size:50px;}
     /*---- sec2 - missions ----*/
-    section:nth-child(2){display:block;}
+    section:nth-child(2){display:block;
+        margin-bottom:2.5%;}
     article{width:100%; height:auto;
         aspect-ratio:5/2;
         margin-bottom:1.6%;
@@ -108,7 +111,8 @@ article p a{display:-webkit-box;
         aspect-ratio:1/1;
         margin-right:10px;
         float:left;}
-    article h3{margin-top:1px;}
+    article h3{margin-top:4px;
+        margin-bottom:4px;}
     article h4{margin-bottom:4px;}
     article h4 a{display:-webkit-box;
         -webkit-line-clamp:2;

@@ -1,7 +1,14 @@
 $(document).ready(function(){
-
     let num, //1,2,3,4,5,6,7,8
         num_page; //1234>0,5678>1
+
+
+    // 이미지 change
+    $('.page img').click(function(){
+        let img = $(this).attr('src');
+        $('.dp_img img').attr('src',img);
+        $(window).scrollTop(0);
+    });
 
     // 페이지 숫자 클릭
     $('.num').click(function(){
