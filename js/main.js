@@ -51,9 +51,11 @@ $(document).ready(function(){
 
     // -------------------- article2 - featured mission
     $('.m_ct>li').click(function(){
-        let idx = $(this).index();
+        let idx = $(this).index(),
+            img = $(this).find('img').attr('src');
         $(this).addClass('m_ct_on').siblings().removeClass();
         $('.m_article>li').eq(idx).addClass('m_on').siblings().removeClass();
+        $('.m_img img').attr('src',img);
     });
 
 });
