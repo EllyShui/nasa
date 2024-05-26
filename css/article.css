@@ -9,6 +9,7 @@
 
 /*---------- news ----------*/
 .news{width:calc(95% - 90px);
+    min-height:1000px;
     margin:0 auto;}
 
     /* sec1-info */
